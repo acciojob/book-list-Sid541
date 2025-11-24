@@ -14,106 +14,86 @@ body {
     color: #1a1a1a;
 }
 
-/* Beautiful Gradient Heading */
+/* Heading */
 h1 {
     text-align: center;
     font-size: 3.2rem;
     margin-bottom: 35px;
-    background: linear-gradient(90deg, #fff, #dbeafe);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0px 3px 10px rgba(0,0,0,0.25);
-    letter-spacing: 1px;
+    color: #fff;
 }
 
-/* Form Card (Glassmorphism) */
-.form-card {
-    width: 65%;
+/* Form Group */
+.form-group {
+    width: 80%;
     margin: 0 auto 40px auto;
     padding: 30px;
     border-radius: 15px;
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
-
-/* Form Layout */
-.form-card form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Input Fields */
-.form-card input {
+.form-group input {
+    width: calc(33.33% - 20px);
     padding: 12px 15px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #ccc;
     font-size: 1rem;
-    background: rgba(255,255,255,0.85);
-    box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+    margin-right: 10px;
 }
 
-/* Add Book Button */
-#submit {
-    width: 150px;
-    margin-top: 5px;
-    padding: 12px;
+.form-group button {
+    padding: 12px 20px;
     background: #1a1a1a;
     color: #fff;
     border: none;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: background 0.3s;
 }
 
-#submit:hover {
+.form-group button:hover {
     background: #333;
-    transform: scale(1.05);
 }
 
-/* Table Wrapper (Glassmorphism) */
-.table-card {
+/* Table Wrapper */
+.table {
     width: 80%;
     margin: 0 auto;
+    border-collapse: collapse;
     border-radius: 15px;
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     overflow: hidden;
 }
 
-/* Table */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table thead tr {
-    background: rgba(0, 0, 0, 0.75);
+/* Table Header */
+.table thead {
+    background: #1a1a1a;
 }
 
 .table th {
     padding: 15px;
     color: #fff;
     font-size: 1.05rem;
-    letter-spacing: 0.5px;
     text-align: left;
+}
+
+/* Table Body */
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
 }
 
 .table td {
     padding: 15px;
     font-size: 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
-/* Zebra rows */
+/* Zebra Rows */
 .table tbody tr:nth-child(even) {
-    background: rgba(255,255,255,0.45);
+    background: rgba(255, 255, 255, 0.9);
 }
 
-/* Delete Button (X Button) */
+/* Delete Button */
 .delete-btn {
     background-color: #ff4d4d;
     color: white;
@@ -126,11 +106,5 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease;
-}
-
-.delete-btn:hover {
-    background-color: #ff1a1a;
-    transform: scale(1.15);
+    transition: background 0.3s;
 }
