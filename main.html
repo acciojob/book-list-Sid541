@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBookList</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>MyBookList</title>
 </head>
+
 <body>
 
-    <h1>📚 MyBookList</h1>
+  <!-- Heading -->
+  <h1>My<span style="color:#1e90ff;">Book</span>List</h1>
 
-    <div class="form-card">
-        <form id="book-form">
-            <input type="text" id="title" placeholder="Book Title" required>
-            <input type="text" id="author" placeholder="Author Name" required>
-            <input type="text" id="isbn" placeholder="ISBN Number" required>
-            <button type="submit" id="submit">➕ Add Book</button>
-        </form>
-    </div>
+  <!-- Form Card -->
+  <div class="form-card">
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Title" />
+      <input type="text" id="author" placeholder="Author" />
+      <input type="text" id="isbn" placeholder="ISBN#" />
+      <button id="submit">Add Book</button>
+    </form>
+  </div>
 
-    <div class="table-card">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN#</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
+  <!-- Table Card -->
+  <div class="table-card">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
 
-            <tbody id="book-list">
-                <!-- JS will add rows here -->
-            </tbody>
-        </table>
-    </div>
-    <script type="text/javascript" src="./script.js">
+      <!-- Table Body -->
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
